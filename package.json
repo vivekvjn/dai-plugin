@@ -1,0 +1,42 @@
+{
+  "name": "dai-plugin",
+  "displayName": "DAI Plugin",
+  "description": "DAI Plugin syntax highlighting, formatter and Intellisense support",
+  "publisher": "vivekvijayan",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.40.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "plugin",
+        "aliases": [
+          "DAI plugin",
+          "plugin"
+        ],
+        "extensions": [
+          "plugin"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "plugin",
+        "scopeName": "source.plugin",
+        "path": "./syntaxes/plugin.tmLanguage.json"
+      },
+      {
+        "path": "./syntaxes/plugin.tmLanguage.json",
+        "scopeName": "source.plugin",
+        "embeddedLanguages": {
+          "support.function.plugin": "c"
+        }
+      }
+    ]
+  }
+}

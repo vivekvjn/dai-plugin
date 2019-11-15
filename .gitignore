@@ -1,0 +1,6 @@
+# ide-related settings
+/.vscode/
+.vscodeignore
+
+*.swp
+

@@ -1,0 +1,75 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "DAI plugin",
+	"patterns": [
+		{
+			"include": "#pluginKeyword"
+		},
+		{
+			"include": "#section"
+		},
+		{
+			"include": "#pluginPoint"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"pluginKeyword": {
+			"patterns": [
+				{
+					"name": "constant.language.plugin",
+					"match": "^plugin"
+				}
+			]
+		},
+		"section": {
+			"patterns": [
+				{
+					"name": "keyword.control.plugin",
+					"match": "(?<=plugin\\.)(start|revision|apl|expand|switch|version|prereq|header|lib|exe|segments|end)"
+				}
+			]
+		},
+		"pluginPoint": {
+			"patterns": [
+				{
+					"name": "support.function.plugin",
+					"match": "^\\s*>>(.*)"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.plugin",
+					"match": "^!(.*)"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.plugin",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.plugin",
+					"match": "\\\\."
+				}
+			]
+		},
+		"invalidLine": {
+			"patterns": [
+				{
+					"name": "invalid.illegal.plugin",
+					"match": "^(?![!])^\\s*\/\\*(\\*(?!\/)|[^*])*\\*\/"
+				}
+			]
+		}
+	},
+	"scopeName": "source.plugin"
+}
