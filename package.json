@@ -1,17 +1,31 @@
 {
   "name": "dai-plugin",
   "displayName": "DAI Plugin",
-  "description": "DAI Plugin syntax highlighting, formatter and Intellisense support",
+  "version": "0.1.0",
   "publisher": "vivekvijayan",
+  "description": "DAI Plugin syntax highlighting and Intellisense",
+  "author": {
+    "name": "Vivek Vijayan",
+    "email": "vivek.vijayan@dai.co.uk"
+  },
+  "icon": "images/icon.png",
   "repository": {
     "url": "https://github.com/vivekvjn/dai-plugin"
   },
-  "version": "0.1.0",
+  "preview": true,
   "engines": {
     "vscode": "^1.40.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Snippets"
+  ],
+  "keywords": [
+    "DAI",
+    "plugin",
+    "formatter",
+    "syntax",
+    "highlight"
   ],
   "contributes": {
     "languages": [
