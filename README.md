@@ -1,51 +1,60 @@
-# dai-plugin README
+# DAI Plugin for Visual Studio Code
 
-This plugin provides syntax highlighting for DAI plugin files
+This extension provides syntax highlighting and code snippets for plugins
 
 ## Features
-TODO
+
+- Syntax Highlighting for plugin files (\*.plugin)
+- Snippets for plugin-poing insertions in plugin and c files
 
 <!-- For example if there is an image subfolder under your extension project workspace:
 
 \!\[feature X\]\(images/feature-x.png\) -->
 
-> Note: This plugin is a work in progress.
+> Note: This extension is still in preview.
 
-## Requirements
-TODO
+### Code Snippet - defining plugin point in plugin file
 
-## Extension Settings
-TODO
-<!-- Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+<p align="center">
+  <br />
+  <img src="https://raw.githubusercontent.com/vivekvjn/dai-plugin/master/images/docs/plugin-point-define.gif" alt="Plugin Point - define" />
+  <br />
+</p>
+
+### Code Snippet - inserting plugin point in C file
+
+<p align="center">
+  <br />
+  <img src="https://raw.githubusercontent.com/vivekvjn/dai-plugin/master/images/docs/plugin-point-insert.gif" alt="Plugin Point - insert" />
+  <br />
+</p>
+
+<!-- ## Requirements
+
+TODO -->
+
+## Coming Soon
+
+- Code Intellisense in plugin files
+
+<!-- ## Extension Settings
+
+Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
 
 For example:
 
 This extension contributes the following settings:
 
 * `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something -->
+* `myExtension.thing`: set to `blah` to do something
+-->
 
 <!-- ## Known Issues
 
 Calling out known issues can help limit users opening duplicate issues against your extension.
+-->
 
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z. -->
-
------------------------------------------------------------------------------------------------------------
+---
 
 <!-- ## Working with Markdown
 

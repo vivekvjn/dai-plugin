@@ -38,22 +38,35 @@
         "extensions": [
           "plugin"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./src/language-configuration.json"
       }
     ],
     "grammars": [
       {
         "language": "plugin",
         "scopeName": "source.plugin",
-        "path": "./syntaxes/plugin.tmLanguage.json"
+        "path": "./src/syntaxes/plugin.tmLanguage.json"
       },
       {
-        "path": "./syntaxes/plugin.tmLanguage.json",
+        "path": "./src/syntaxes/plugin.tmLanguage.json",
         "scopeName": "source.plugin",
         "embeddedLanguages": {
           "support.function.plugin": "c"
         }
       }
+    ],
+    "snippets": [
+      {
+        "language": "plugin",
+        "path": "./src/snippets/plugin.json"
+      },
+      {
+        "language": "c",
+        "path": "./src/snippets/c.json"
+      }
     ]
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
   }
 }

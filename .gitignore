@@ -1,7 +1,4 @@
-# ide-related settings
-/.vscode/
-.vscodeignore
+/node_modules/
 
 *.swp
-
 *.vsix
