@@ -1,9 +1,9 @@
 {
   "name": "dai-plugin",
   "displayName": "DAI Plugin",
+  "description": "DAI Plugin syntax highlighting and Intellisense",
   "version": "1.1.0",
   "publisher": "vivekvijayan",
-  "description": "DAI Plugin syntax highlighting and Intellisense",
   "author": {
     "name": "Vivek Vijayan",
     "email": "vivek.vijayan@dai.co.uk"
@@ -18,8 +18,7 @@
   },
   "categories": [
     "Programming Languages",
-    "Snippets",
-    "Themes"
+    "Snippets"
   ],
   "keywords": [
     "DAI",
@@ -75,13 +74,6 @@
           "light": "#be2f76",
           "highContrast": "#be2f76"
         }
-      }
-    ],
-    "themes": [
-      {
-        "label": "Visual Studio Dark - DAI",
-        "uiTheme": "vs-dark",
-        "path": "./src/themes/dai-theme.json"
       }
     ]
   },
