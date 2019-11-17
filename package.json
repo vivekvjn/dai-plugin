@@ -45,13 +45,9 @@
       {
         "language": "plugin",
         "scopeName": "source.plugin",
-        "path": "./src/syntaxes/plugin.tmLanguage.json"
-      },
-      {
         "path": "./src/syntaxes/plugin.tmLanguage.json",
-        "scopeName": "source.plugin",
         "embeddedLanguages": {
-          "support.function.plugin": "c"
+          "source.plugin": "c"
         }
       }
     ],
@@ -63,6 +59,24 @@
       {
         "language": "c",
         "path": "./src/snippets/c.json"
+      }
+    ],
+    "colors": [
+      {
+        "id": "meta.define.plugin",
+        "description": "Color for plugin definition points",
+        "defaults": {
+          "dark": "#be2f76",
+          "light": "#be2f76",
+          "highContrast": "#be2f76"
+        }
+      }
+    ],
+    "themes": [
+      {
+        "label": "Visual Studio Dark - DAI",
+        "uiTheme": "vs-dark",
+        "path": "./src/themes/dai-theme.json"
       }
     ]
   },
