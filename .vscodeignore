@@ -4,7 +4,7 @@
 .prettierrc
 
 out/test/**
-src/**
+#src/**
 
 **/tsconfig.json
 **/tslint.json

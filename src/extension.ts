@@ -24,20 +24,23 @@ export function activate(context: vscode.ExtensionContext) {
 
   context.subscriptions.push(disposable); */
 
-  vscode.languages.registerHoverProvider('plugin', {
-    provideHover(document, position, token) {
-      const range = document.getWordRangeAtPosition(position);
-      const word = document.getText(range);
+  vscode.languages.registerHoverProvider(
+    { scheme: 'file', language: 'plugin' },
+    {
+      provideHover(document, position, token) {
+        const range = document.getWordRangeAtPosition(position);
+        const word = document.getText(range);
 
-      if (word === 'plugin') {
-        return new vscode.Hover('plugin keyword');
+        if (word === 'plugin') {
+          return new vscode.Hover('plugin keyword');
+        }
       }
     }
-  });
+  );
 
   context.subscriptions.push(
     vscode.languages.registerCompletionItemProvider(
-      'plugin',
+      { scheme: 'file', language: 'plugin' },
       {
         provideCompletionItems(
           document: vscode.TextDocument,
