@@ -1,7 +1,7 @@
 {
   "name": "dai-plugin",
   "displayName": "DAI Plugin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "vivekvijayan",
   "description": "DAI Plugin syntax highlighting and Intellisense",
   "author": {
@@ -18,7 +18,8 @@
   },
   "categories": [
     "Programming Languages",
-    "Snippets"
+    "Snippets",
+    "Themes"
   ],
   "keywords": [
     "DAI",
@@ -27,6 +28,10 @@
     "syntax",
     "highlight"
   ],
+  "activationEvents": [
+    "onLanguage:plugin"
+  ],
+  "main": "./out/extension.js",
   "contributes": {
     "languages": [
       {
@@ -45,13 +50,9 @@
       {
         "language": "plugin",
         "scopeName": "source.plugin",
-        "path": "./src/syntaxes/plugin.tmLanguage.json"
-      },
-      {
         "path": "./src/syntaxes/plugin.tmLanguage.json",
-        "scopeName": "source.plugin",
         "embeddedLanguages": {
-          "support.function.plugin": "c"
+          "source.plugin": "c"
         }
       }
     ],
@@ -64,9 +65,43 @@
         "language": "c",
         "path": "./src/snippets/c.json"
       }
+    ],
+    "colors": [
+      {
+        "id": "meta.define.plugin",
+        "description": "Color for plugin definition points",
+        "defaults": {
+          "dark": "#be2f76",
+          "light": "#be2f76",
+          "highContrast": "#be2f76"
+        }
+      }
+    ],
+    "themes": [
+      {
+        "label": "Visual Studio Dark - DAI",
+        "uiTheme": "vs-dark",
+        "path": "./src/themes/dai-theme.json"
+      }
     ]
   },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
   "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.40.0",
+    "glob": "^7.1.5",
+    "mocha": "^6.2.2",
+    "typescript": "^3.6.4",
+    "tslint": "^5.20.0",
+    "vscode-test": "^1.2.2",
     "prettier": "^1.19.1"
   }
 }

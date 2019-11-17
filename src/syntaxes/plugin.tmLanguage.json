@@ -38,7 +38,7 @@
     "pluginPoint": {
       "patterns": [
         {
-          "name": "constant.language.plugin",
+          "name": "meta.define.plugin",
           "match": "^\\s*>>(.*)"
         }
       ]
