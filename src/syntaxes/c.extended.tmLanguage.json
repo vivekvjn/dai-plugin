@@ -18,6 +18,46 @@
     "constants": {
       "patterns": []
     },
+    "entityTypes": {
+      "patterns": [
+        {
+          "name": "entity.name.type.c.extended",
+          "match": "\\b(BOOLEAN)\\b"
+        },
+        {
+          "name": "entity.name.type.c.extended",
+          "match": "\\b(EXTENDED_BOOLEAN)\\b"
+        },
+        {
+          "name": "entity.name.type.c.extended",
+          "match": "\\b(REC_NO)\\b"
+        },
+        {
+          "name": "entity.name.type.c.extended",
+          "match": "\\b(BACK_REC_NO)\\b"
+        },
+        {
+          "name": "entity.name.type.c.extended",
+          "match": "\\b(CHAIN_REC_NO)\\b"
+        },
+        {
+          "name": "entity.name.type.c.extended",
+          "match": "\\b(DOUBLE_CHAIN_REC_NO)\\b"
+        },
+        {
+          "name": "entity.name.type.c.extended",
+          "match": "\\b(POS_INT)\\b"
+        },
+        {
+          "name": "entity.name.type.c.extended",
+          "match": "\\b(UNSIGNED_INT)\\b"
+        },
+        {
+          "name": "entity.name.type.c.extended",
+          "match": "\\b([A-Z]+_TYPE)\\b"
+        }
+      ]
+    },
     "storageTypes": {
       "patterns": [
         {
@@ -27,22 +67,6 @@
         {
           "name": "storage.type.c.extended",
           "match": "\\b([A-Z]+_REC_NO)\\b"
-        }
-      ]
-    },
-    "entityTypes": {
-      "patterns": [
-        {
-          "name": "entity.name.type.c.extended",
-          "match": "\\b(BOOLEAN)\\b"
-        },
-        {
-          "name": "entity.name.type.c.extended",
-          "match": "\\b(REC_NO)\\b"
-        },
-        {
-          "name": "entity.name.type.c.extended",
-          "match": "\\b([A-Z]+_TYPE)\\b"
         }
       ]
     }
