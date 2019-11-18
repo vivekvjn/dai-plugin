@@ -4,8 +4,9 @@ This extension provides syntax highlighting and code snippets for plugins
 
 ## Features
 
-- Syntax Highlighting for plugin files (\*.plugin)
-- Plugin Segment Completion
+- Syntax highlighting for plugin files (\*.plugin)
+- Syntax highlighting of DAI keywords for c files
+- Plugin Segment completion
 - Snippets for plugin-poing insertions in plugin and c files
 
 <!-- For example if there is an image subfolder under your extension project workspace:

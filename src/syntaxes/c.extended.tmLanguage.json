@@ -1,0 +1,50 @@
+{
+  "scopeName": "source.c.extended",
+  "injectionSelector": "L:source.c",
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "DAI C",
+  "patterns": [
+    {
+      "include": "#constants"
+    },
+    {
+      "include": "#storageTypes"
+    },
+    {
+      "include": "#entityTypes"
+    }
+  ],
+  "repository": {
+    "constants": {
+      "patterns": []
+    },
+    "storageTypes": {
+      "patterns": [
+        {
+          "name": "storage.modifier.c.extended",
+          "match": "^\\s*\\b(GLOBAL)\\b"
+        },
+        {
+          "name": "storage.type.c.extended",
+          "match": "\\b([A-Z]+_REC_NO)\\b"
+        }
+      ]
+    },
+    "entityTypes": {
+      "patterns": [
+        {
+          "name": "entity.name.type.c.extended",
+          "match": "\\b(BOOLEAN)\\b"
+        },
+        {
+          "name": "entity.name.type.c.extended",
+          "match": "\\b(REC_NO)\\b"
+        },
+        {
+          "name": "entity.name.type.c.extended",
+          "match": "\\b([A-Z]+_TYPE)\\b"
+        }
+      ]
+    }
+  }
+}
