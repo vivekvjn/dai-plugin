@@ -2,7 +2,7 @@
   "name": "dai-plugin",
   "displayName": "DAI Plugin",
   "description": "DAI Plugin syntax highlighting and Intellisense",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "publisher": "vivekvijayan",
   "author": {
     "name": "Vivek Vijayan",
@@ -48,8 +48,15 @@
     "grammars": [
       {
         "language": "plugin",
-        "scopeName": "source.plugin",
+        "scopeName": "source.c.plugin",
         "path": "./src/syntaxes/plugin.tmLanguage.json"
+      },
+      {
+        "injectTo": [
+          "source.c"
+        ],
+        "scopeName": "source.c.extended",
+        "path": "./src/syntaxes/c.extended.tmLanguage.json"
       }
     ],
     "snippets": [

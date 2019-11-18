@@ -1,10 +1,8 @@
 {
+  "scopeName": "source.c.plugin",
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
   "name": "DAI plugin",
   "patterns": [
-    {
-      "include": "#pluginKeyword"
-    },
     {
       "include": "#section"
     },
@@ -19,26 +17,22 @@
     }
   ],
   "repository": {
-    "pluginKeyword": {
-      "patterns": [
-        {
-          "name": "keyword.control.plugin",
-          "match": "^plugin"
-        }
-      ]
-    },
     "section": {
       "patterns": [
         {
-          "name": "variable.other.plugin",
-          "match": "(?<=plugin\\.)(start|revision|apl|expand|switch|version|prereq|header|libgen|lib|dbupdater|exe|rootexe|files|segments|branch|oel|event|end)"
+          "name": "variable.other.c.plugin",
+          "match": "(?<=plugin\\.)\\b(start|revision|apl|expand|switch|version|prereq|header|libgen|lib|dbupdater|exe|rootexe|files|segments|branch|oel|event|end)\\b"
         }
       ]
     },
     "pluginPoint": {
       "patterns": [
         {
-          "name": "meta.define.plugin",
+          "name": "keyword.control.c.plugin",
+          "match": "^\\s*\\b(plugin)\\b"
+        },
+        {
+          "name": "meta.define.c.plugin",
           "match": "^\\s*>>(.*)"
         }
       ]
@@ -46,30 +40,21 @@
     "comments": {
       "patterns": [
         {
-          "name": "comment.line.plugin",
+          "name": "comment.line.c.plugin",
           "match": "^!(.*)"
         }
       ]
     },
     "strings": {
-      "name": "string.quoted.double.plugin",
+      "name": "string.quoted.double.c.plugin",
       "begin": "\"",
       "end": "\"",
       "patterns": [
         {
-          "name": "constant.character.escape.plugin",
+          "name": "constant.character.escape.c.plugin",
           "match": "\\\\."
         }
       ]
-    },
-    "invalidLine": {
-      "patterns": [
-        {
-          "name": "invalid.illegal.plugin",
-          "match": "^(?![!])^\\s*/\\*(\\*(?!/)|[^*])*\\*/"
-        }
-      ]
     }
-  },
-  "scopeName": "source.plugin"
+  }
 }
