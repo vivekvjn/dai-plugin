@@ -8,10 +8,13 @@
       "include": "#constants"
     },
     {
+      "include": "#entityTypes"
+    },
+    {
       "include": "#storageTypes"
     },
     {
-      "include": "#entityTypes"
+      "include": "#macros"
     }
   ],
   "repository": {
@@ -54,7 +57,7 @@
         },
         {
           "name": "entity.name.type.c.extended",
-          "match": "\\b([A-Z]+_TYPE)\\b"
+          "match": "\\b([A-Z0-9_]+_TYPE)\\b"
         }
       ]
     },
@@ -66,7 +69,47 @@
         },
         {
           "name": "storage.type.c.extended",
-          "match": "\\b([A-Z]+_REC_NO)\\b"
+          "match": "\\b(LOC_NullLocation)\\b"
+        },
+        {
+          "name": "storage.type.c.extended",
+          "match": "\\b(NULL_REC_NO)\\b"
+        },
+        {
+          "name": "storage.type.c.extended",
+          "match": "\\b(MANY_REC_NO)\\b"
+        },
+        {
+          "name": "storage.type.c.extended",
+          "match": "\\b(NULL_POS_INT)\\b"
+        },
+        {
+          "name": "storage.type.c.extended",
+          "match": "\\b(NULL_TIME)\\b"
+        },
+        {
+          "name": "storage.type.c.extended",
+          "match": "\\b(NULL_DAY)\\b"
+        },
+        {
+          "name": "storage.type.c.extended",
+          "match": "\\b(NULL_TIME_OF_DAY)\\b"
+        },
+        {
+          "name": "storage.type.c.extended",
+          "match": "\\b(NULL_WEIGHT)\\b"
+        },
+        {
+          "name": "storage.type.c.extended",
+          "match": "\\b(NULL_VOLUME)\\b"
+        }
+      ]
+    },
+    "macros": {
+      "patterns": [
+        {
+          "name": "support.type.c.extended.looper",
+          "match": "\\b(LOOP_ALL_[A-Z0-9_]+)\\b"
         }
       ]
     }
