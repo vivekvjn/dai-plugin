@@ -2,6 +2,11 @@
 
 <!-- Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file. -->
 
+## [1.2.1]
+
+- Fixed grammar for custom typdef TYPES
+- Added support for more DAI DataTypes.
+
 ## [1.2.0]
 
 - Syntax highlighting of DAI keywords for c files
