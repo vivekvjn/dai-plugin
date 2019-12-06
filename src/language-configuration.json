@@ -26,5 +26,6 @@
     ["(", ")"],
     ["\"", "\""],
     ["'", "'"]
-  ]
+  ],
+  "wordPattern": "(^\\s*!.*)|(^\\s*\\b(plugin)\\b)|(^\\s*>>(\\s)?)|(\\S*\\.plugin\\.inc)|(?<=plugin\\.)\\b(start|revision|apl|expand|switch|version|prereq|header|libgen|lib|dbupdater|exe|rootexe|files|segments|branch|oel|event|end)\\b|(\\d+\\.\\d+\\.\\d+)|(\\d+\\.\\d+)"
 }
