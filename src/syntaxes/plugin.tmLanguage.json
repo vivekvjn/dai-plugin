@@ -7,6 +7,9 @@
       "include": "#section"
     },
     {
+      "include": "#sectionValue"
+    },
+    {
       "include": "#pluginPoint"
     },
     {
@@ -20,19 +23,47 @@
     "section": {
       "patterns": [
         {
-          "name": "variable.other.c.plugin",
+          "name": "variable.other.c.plugin.section",
           "match": "(?<=plugin\\.)\\b(start|revision|apl|expand|switch|version|prereq|header|libgen|lib|dbupdater|exe|rootexe|files|segments|branch|oel|event|end)\\b"
+        }
+      ]
+    },
+    "sectionValue": {
+      "patterns": [
+        {
+          "name": "constant.numeric.c.plugin.section.version",
+          "match": "(?<=plugin\\.version)(?:\\s+)((\\d+)(\\.+\\d+){2})(?:\\s)"
+        },
+        {
+          "name": "constant.numeric.c.plugin.section.apl",
+          "match": "(?<=plugin\\.apl)(?:\\s+)((\\d+)(\\.+\\d+){1})(?:\\s)"
+        },
+        {
+          "name": "constant.numeric.c.plugin.section.revision",
+          "match": "(?<=plugin\\.revision)(?:\\s+)([a-z0-9]+)(?:\\s)"
+        },
+        {
+          "name": "constant.numeric.c.plugin.section.switch",
+          "match": "(?<=plugin\\.switch)(?:\\s+)(\\w+)(?:\\s)"
+        },
+        {
+          "name": "constant.numeric.c.plugin.section.segments",
+          "match": "(?<=plugin\\.segments)(?:\\s+)(!?plugin_\\w+)(?:\\s)"
+        },
+        {
+          "name": "constant.numeric.c.plugin.section.switchCase",
+          "match": "((?<=plugin\\.lib)|(?<=plugin\\.header)|(?<=plugin\\.files)|(?<=plugin\\.exe))(?:\\s+)(!?plugin_\\w+)(?:\\s)"
         }
       ]
     },
     "pluginPoint": {
       "patterns": [
         {
-          "name": "keyword.control.c.plugin",
+          "name": "keyword.control.c.plugin.pluginPoint",
           "match": "^\\s*\\b(plugin)\\b"
         },
         {
-          "name": "meta.define.c.plugin",
+          "name": "meta.define.c.plugin.pluginPoint",
           "match": "^\\s*>>(.*)"
         }
       ]
@@ -41,7 +72,7 @@
       "patterns": [
         {
           "name": "comment.line.c.plugin",
-          "match": "^\\s*!(.*)"
+          "match": "(^\\s*!.*)"
         }
       ]
     },
