@@ -41,7 +41,7 @@
       "patterns": [
         {
           "name": "comment.line.c.plugin",
-          "match": "^!(.*)"
+          "match": "^\\s*!(.*)"
         }
       ]
     },
