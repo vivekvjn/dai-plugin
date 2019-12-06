@@ -1,6 +1,6 @@
 {
   "Insert Plugin Point": {
-    "prefix": "plugin>>",
+    "prefix": [">>", "plugin>>"],
     "body": [">> $1.plugin.inc", "$0"],
     "description": ">> custom.plugin.point.plugin.inc"
   }

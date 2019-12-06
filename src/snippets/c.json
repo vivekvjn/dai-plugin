@@ -1,6 +1,6 @@
 {
   "Insert Plugin Point": {
-    "prefix": "plugin>>",
+    "prefix": [">>", "plugin>>"],
     "body": [
       "/* PLUGINSTART ($1.plugin.inc)                     */",
       "/* PLUGINEND - end of plugin - edit keyline do not alter                */"
