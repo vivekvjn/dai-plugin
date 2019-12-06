@@ -1,6 +1,13 @@
-# Change Log
+# Changelog
 
-<!-- Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file. -->
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [1.2.2](https://github.com/vivekvjn/dai-plugin/compare/v1.2.1...v1.2.2) (2019-12-06)
+
+
+### Bug Fixes
+
+* correct grammar for comments ([90ef740](https://github.com/vivekvjn/dai-plugin/commit/90ef740cab9010d0d7504abee337380e400f1b38))
 
 ## [1.2.1]
 
