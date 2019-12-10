@@ -17,6 +17,9 @@
     },
     {
       "include": "#strings"
+    },
+    {
+      "include": "#cBlock"
     }
   ],
   "repository": {
@@ -84,6 +87,15 @@
         {
           "name": "constant.character.escape.c.plugin",
           "match": "\\\\."
+        }
+      ]
+    },
+    "cBlock": {
+      "patterns": [
+        {
+          "include": "source.c",
+          "name": "meta.embedded.block.c",
+          "match": "^(?!\\s*(!|>>|plugin).*$).*"
         }
       ]
     }
