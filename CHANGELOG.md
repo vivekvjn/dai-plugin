@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.1](https://github.com/vivekvjn/dai-plugin/compare/v1.3.0...v1.3.1) (2019-12-10)
+
+
+### Features
+
+* syntax highlight embedded c code ([e234bac](https://github.com/vivekvjn/dai-plugin/commit/e234bac89495be9bbf5edaf918ea5ad2388be499))
+
 ## [1.3.0](https://github.com/vivekvjn/dai-plugin/compare/v1.2.2...v1.3.0) (2019-12-06)
 
 
