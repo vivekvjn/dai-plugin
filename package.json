@@ -47,16 +47,16 @@
     ],
     "grammars": [
       {
-        "language": "plugin",
+        "path": "./src/syntaxes/plugin.tmLanguage.json",
         "scopeName": "source.c.plugin",
-        "path": "./src/syntaxes/plugin.tmLanguage.json"
+        "language": "plugin"
       },
       {
+        "path": "./src/syntaxes/c.extended.tmLanguage.json",
+        "scopeName": "source.c.extended",
         "injectTo": [
           "source.c"
-        ],
-        "scopeName": "source.c.extended",
-        "path": "./src/syntaxes/c.extended.tmLanguage.json"
+        ]
       }
     ],
     "snippets": [
