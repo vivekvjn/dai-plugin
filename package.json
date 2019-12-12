@@ -67,6 +67,10 @@
       {
         "language": "c",
         "path": "./src/snippets/c.json"
+      },
+      {
+        "language": "shellscript",
+        "path": "./src/snippets/sh.json"
       }
     ],
     "colors": [
