@@ -2,7 +2,7 @@
   "name": "dai-plugin",
   "displayName": "DAI Plugin",
   "description": "DAI Plugin syntax highlighting and Intellisense",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "publisher": "vivekvijayan",
   "author": {
     "name": "Vivek Vijayan",
@@ -14,7 +14,7 @@
   },
   "preview": true,
   "engines": {
-    "vscode": "^1.40.0"
+    "vscode": "^1.48.0"
   },
   "categories": [
     "Programming Languages",
