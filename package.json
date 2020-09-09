@@ -12,7 +12,7 @@
   "repository": {
     "url": "https://github.com/vivekvjn/dai-plugin"
   },
-  "preview": true,
+  "preview": false,
   "engines": {
     "vscode": "^1.48.0"
   },
@@ -92,6 +92,14 @@
     "pretest": "npm run compile",
     "test": "node ./out/test/runTest.js",
     "release": "standard-version"
+  },
+  "standard-version": {
+    "scripts": {
+      "prerelease": "git flow release start v`node get-next-version.js`"
+    },
+    "skip": {
+      "tag": true
+    }
   },
   "devDependencies": {
     "@commitlint/cli": "^9.1.2",
