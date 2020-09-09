@@ -13,7 +13,7 @@ This extension provides syntax highlighting and code snippets for plugins
 
 \!\[feature X\]\(images/feature-x.png\) -->
 
-> Note: This extension is still in preview.
+<!--  > Note: This extension is still in preview. -->
 
 ### Code Snippet - defining plugin point in plugin file
 
@@ -71,4 +71,12 @@ Calling out known issues can help limit users opening duplicate issues against y
 * [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
 * [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/) -->
 
-**Enjoy!**
+## For Contributors
+
+### Release
+
+This starts a git-flow release branch with recommened semver and bumps version number and updates changelog
+
+```sh
+npm run release
+```
