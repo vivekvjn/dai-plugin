@@ -3,5 +3,17 @@
     "prefix": [">>", "plugin>>"],
     "body": [">> $1.plugin.inc", "$0"],
     "description": ">> custom.plugin.point.plugin.inc"
+  },
+  "Plugin Segment": {
+    "prefix": "segment",
+    "body": [
+      "!----------------------------------------------------------------------------",
+      "! Plugin Segments - $1",
+      "!----------------------------------------------------------------------------",
+      "plugin.segments plugin_$1",
+      ">> $1.$2.plugin.inc",
+      "\t$0"
+    ],
+    "description": "insert plugin segment"
   }
 }
