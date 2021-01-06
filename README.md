@@ -7,7 +7,8 @@ This extension provides syntax highlighting and code snippets for plugins
 - Syntax highlighting for plugin files (\*.plugin)
 - Syntax highlighting of DAI keywords for c files
 - Plugin Segment completion
-- Snippets for plugin-poing insertions in plugin and c files
+- Snippets for plugin-point insertions in plugin, C and shell files
+- Snippets for frequently used constructs
 
 <!-- For example if there is an image subfolder under your extension project workspace:
 

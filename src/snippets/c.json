@@ -6,5 +6,53 @@
       "/* PLUGINEND - end of plugin - edit keyline do not alter                */"
     ],
     "description": "/* PLUGINSTART */ /* PLUGINEND */"
+  },
+  "Declare RecNo": {
+    "prefix": "recno",
+    "body": [
+      "REC_NO ${1/([a-z]*)_*([a-z]*)/${1:/capitalize}${2:/capitalize}/g}RecNo = NULL_REC_NO;",
+      "$0"
+    ],
+    "description": "REC_NO <db>RecNo = NULL_REC_NO;"
+  },
+  "Check ValidRecNo": {
+    "prefix": "validrecno",
+    "body": [
+      "if( !${1/(.*)/${1:/upcase}/}_ValidRecNo( ${1/([a-z]*)_*([a-z]*)/${1:/capitalize}${2:/capitalize}/g}RecNo ))",
+      "\treturn ${2};",
+      "",
+      "$0"
+    ],
+    "description": "if( !<db>_ValidRecno() )"
+  },
+  "Infinite Loop": {
+    "prefix": "infiniteloop",
+    "body": [
+      "int i=1; while(i){};$0"
+    ],
+    "description": "int i=1; while(i){};"
+  },
+  "Project Tag - Start": {
+    "prefix": "projectstart",
+    "body": [
+      "/* PROJECTSTART */",
+      "$0"
+    ],
+    "description": "/* PROJECTSTART */"
+  },
+  "Project Tag - End": {
+    "prefix": "projectend",
+    "body": [
+      "/* PROJECTEND */",
+      "$0"
+    ],
+    "description": "/* PROJECTEND */"
+  },
+  "Legacy Boxed": {
+    "prefix": "legacyboxed",
+    "body": [
+      "\t\t/* legacy BOXED: $0 */"
+    ],
+    "description": "/* legacy BOXED: <boxed-field> */"
   }
 }
