@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.1](https://github.com/vivekvjn/dai-plugin/compare/v1.5.0...v1.5.1) (2021-09-26)
+
+
+### Bug Fixes
+
+* syntax highlight for multiple plugin switches ([2aa29a5](https://github.com/vivekvjn/dai-plugin/commit/2aa29a51ed6313bc8c0efaa6b672c670feef3d2a))
+* upgrade vscode engine to 1.52.0 ([27e7654](https://github.com/vivekvjn/dai-plugin/commit/27e7654b0355708c3328b352ca63d3d864ab11ad))
+
 ## [1.5.0](https://github.com/vivekvjn/dai-plugin/compare/v1.4.2...v1.5.0) (2021-01-06)
 
 
