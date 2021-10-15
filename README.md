@@ -76,8 +76,10 @@ Calling out known issues can help limit users opening duplicate issues against y
 
 ### Release
 
-This starts a git-flow release branch with recommened semver and bumps version number and updates changelog
+This starts a git-flow release branch with recommended semver and bumps version number and updates changelog
 
 ```sh
 npm run release
+# do the testing and when ready finish the release branch with
+#git flow release finish <branch-name>
 ```

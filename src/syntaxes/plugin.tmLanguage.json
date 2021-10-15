@@ -35,12 +35,16 @@
       "patterns": [
         {
           "name": "variable.other.c.plugin.section",
-          "match": "(?<=plugin\\.)\\b(start|group|desc|revision|apl|expand|switch|version|prereq|header|libgen|lib|dbupdater|exe|rootexe|files|segments|branch|oel|event|end)\\b"
+          "match": "(?<=plugin\\.)\\b(start|format|group|desc|revision|apl|expand|switch|version|prereq|header|libgen|lib|dbupdater|exe|rootexe|files|segments|branch|oel|event|end)\\b"
         }
       ]
     },
     "sectionValue": {
       "patterns": [
+        {
+          "name": "constant.numeric.c.plugin.section.format",
+          "match": "(?<=plugin\\.format)(?:\\s+)([0-9]+)(?:\\s)"
+        },
         {
           "name": "constant.numeric.c.plugin.section.desc",
           "match": "(?<=plugin\\.desc)(?:\\s+)(\\w+( \\w+)*)(?:\\s)"

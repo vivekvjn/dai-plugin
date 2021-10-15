@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/vivekvjn/dai-plugin/compare/v1.5.1...v1.6.0) (2021-10-15)
+
+
+### Features
+
+* add support for plugin.format section ([f69ebe4](https://github.com/vivekvjn/dai-plugin/commit/f69ebe44693391c9ea8b80b1ffc15c6474744d7d))
+
 ### [1.5.1](https://github.com/vivekvjn/dai-plugin/compare/v1.5.0...v1.5.1) (2021-09-26)
 
 
